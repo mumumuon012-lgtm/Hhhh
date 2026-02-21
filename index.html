@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scratch Learning - เกมแมวกินโดนัท</title>
+    <meta name="description" content="บทเรียนออนไลน์สอนสร้างเกมแมวกินโดนัทด้วย Scratch โดยคุณซีตีไอดา มะและ">
+    <meta name="keywords" content="สอน Scratch, สร้างเกม, วิทยาการคำนวณ, แมวกินโดนัท, ซีตีไอดา มะและ">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -77,7 +79,6 @@
         .card:hover { transform: translateY(-5px); border: 1px solid var(--primary-color); }
         .card h3 { color: var(--primary-color); margin-top: 0; }
 
-        /* ปรับปรุงส่วนแสดงผลวิดีโอ */
         .video-box { 
             width: 100%; 
             max-width: 800px; 
@@ -94,7 +95,6 @@
             position: relative;
         }
         
-        /* บังคับให้ iframe ขยายเต็มกรอบ */
         .video-box iframe {
             position: absolute;
             top: 0;
@@ -105,7 +105,7 @@
         }
 
         .back-btn { color: var(--primary-color); text-decoration: none; display: inline-block; margin-bottom: 20px; font-weight: bold; }
-        .content-container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; }
+        .content-container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; line-height: 1.6; }
 
         footer { text-align: center; padding: 30px; background: white; color: var(--dark-color); margin-top: 50px; }
         input { width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
@@ -125,7 +125,7 @@
         <div class="hero-content">
             <div style="flex:1; min-width: 300px;">
                 <h1>สร้างเกมแมวกินโดนัท ด้วย Scratch</h1>
-                <p>บทเรียนออนไลน์วิชาวิทยาการคำนวณ ออกแบบโดยใช้หลักการ Gagne's 9 Events เพื่อการเรียนรู้ที่มีประสิทธิภาพ</p>
+                <p>บทเรียนออนไลน์วิชาวิทยาการคำนวณ ออกแบบโดยใช้หลักการ Gagne's 9 Events เพื่อประสิทธิภาพสูงสุดในการเรียนรู้สำหรับนักศึกษาระดับอุดมศึกษา</p>
                 <a href="#lessons-page" class="btn-main">เข้าสู่บทเรียน</a>
             </div>
             <div style="flex:1; text-align:center; min-width: 300px;">
@@ -154,13 +154,13 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 1: การเตรียมฉากและตัวละคร</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/KLuCFhq3vNM?si=4VuNswSIVq7X1OQO" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/KLuCFhq3vNM" title="YouTube video player" allowfullscreen></iframe>
             </div>
             <h3>สรุปเนื้อหา:</h3>
             <ul>
-                <li>การเลือกฉากหลัง (Backdrops) จาก Library</li>
-                <li>การเพิ่มตัวละคร (Sprites) แมว และ โดนัท</li>
-                <li>การตั้งชื่อและปรับขนาดตัวละคร</li>
+                <li>เลือกฉากหลัง (Backdrops) เช่น ฉาก Blue Sky เพื่อสร้างบรรยากาศ</li>
+                <li>เพิ่มตัวละครหลัก: แมว (Cat) และเป้าหมาย: โดนัท (Donut)</li>
+                <li>ปรับขนาดตัวละคร (Size) ให้เหมาะสมกับการเล่น</li>
             </ul>
         </div>
     </div>
@@ -170,9 +170,62 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 2: การควบคุมการเคลื่อนที่</h2>
             <div class="video-box">
-                <p>[ ใส่ Embed วิดีโอ Unit 2 ตรงนี้ ]</p>
+                <iframe src="https://www.youtube.com/embed/วิดีโอของคุณ" title="YouTube video player" allowfullscreen></iframe>
             </div>
-            <p>เรียนรู้การใช้บล็อกคำสั่ง <strong>Events</strong> และ <strong>Motion</strong></p>
+            <h3>สรุปเนื้อหา:</h3>
+            <ul>
+                <li>ใช้บล็อก Events เพื่อตรวจจับการกดปุ่มลูกศรซ้าย-ขวา</li>
+                <li>กำหนดตำแหน่งแกน X และ Y เพื่อให้แมวเคลื่อนที่ตามสั่ง</li>
+                <li>สลับชุดตัวละคร (Animation) เพื่อความเป็นธรรมชาติ</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="unit3" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 3: แอนิเมชันและเสียง</h2>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/วิดีโอของคุณ" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <h3>สรุปเนื้อหา:</h3>
+            <ul>
+                <li>ใส่เสียง "Bite" หรือเสียงกินเมื่อแมวแตะโดนัท</li>
+                <li>จัดการเสียงพื้นหลัง (Background Music) เพื่อความสนุกสนาน</li>
+                <li>ใส่เอฟเฟกต์ภาพเบื้องต้นเมื่อมีการสัมผัสวัตถุ</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="unit4" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 4: ระบบคะแนนและการตรวจจับ</h2>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/วิดีโอของคุณ" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <h3>สรุปเนื้อหา:</h3>
+            <ul>
+                <li>สร้างตัวแปร (Variables) ชื่อ "Score" และกำหนดค่าเริ่มต้นเป็น 0</li>
+                <li>ใช้บล็อก Sensing ตรวจจับการสัมผัสระหว่างแมวและโดนัท</li>
+                <li>เขียนคำสั่งเพิ่มคะแนน (+1) เมื่อสัมผัสวัตถุเป้าหมาย</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="unit5" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 5: ตรรกะและความยากของเกม</h2>
+            <div class="video-box">
+                <iframe src="https://www.youtube.com/embed/วิดีโอของคุณ" title="YouTube video player" allowfullscreen></iframe>
+            </div>
+            <h3>สรุปเนื้อหา:</h3>
+            <ul>
+                <li>ใช้ตรรกะ If-Then-Else เพื่อตรวจสอบเงื่อนไขคะแนน</li>
+                <li>หากคะแนนมากกว่า 9 ให้เพิ่มความเร็วในการหล่นของโดนัท</li>
+                <li>จัดการการเกิดใหม่ของโดนัทเมื่อโดนขอบหรือถูกกิน</li>
+            </ul>
         </div>
     </div>
 
@@ -180,18 +233,23 @@
         <div class="content-container" style="text-align: center;">
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>ส่งผลงานโปรเจกต์ Scratch</h2>
+            <p>หลังจากเรียนครบ 5 บทเรียน นักศึกษาสามารถแชร์ลิงก์โปรเจกต์มาที่นี่ครับ</p>
             <form action="mailto:Mumumuon012@gmail.com" method="post" enctype="text/plain" style="text-align: left; margin-top: 20px;">
-                <label>ชื่อ-นามสกุล:</label>
-                <input type="text" name="Student_Name" placeholder="ระบุชื่อของคุณ" required>
+                <label>ชื่อ-นามสกุล นักศึกษา:</label>
+                <input type="text" name="Student_Name" placeholder="ระบุชื่อจริงของคุณ" required>
+                
                 <label>ลิงก์โปรเจกต์ Scratch (Shared Link):</label>
                 <input type="text" name="Scratch_Project_URL" placeholder="https://scratch.mit.edu/projects/..." required>
-                <button type="submit" class="btn-main" style="width: 100%; cursor: pointer;">ส่งงานไปยังอีเมล Mumumuon012@gmail.com</button>
+                
+                <p style="font-size: 0.85rem; color: #666;">*เมื่อกดส่ง ระบบจะเปิดแอปอีเมลเพื่อส่งลิงก์งานมายังผู้สอน</p>
+                <button type="submit" class="btn-main" style="width: 100%; cursor: pointer;">ส่งงานไปยังอีเมลผู้สอน</button>
             </form>
         </div>
     </div>
 
     <footer>
         <p>จัดทำโดย: นางสาวซีตีไอดา มะและ</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">บทเรียนสื่อการสอนนวัตกรรม (วิชาวิทยาการคำนวณ)</p>
     </footer>
 
 </body>
