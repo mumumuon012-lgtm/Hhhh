@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scratch Learning - เกมแมวกินโดนัท</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4D97FF;
+            --secondary-color: #FFAB19;
+            --dark-color: #2C3E50;
+            --light-bg: #F0F4F8;
+            --white: #ffffff;
+        }
+
+        body { 
+            font-family: 'Kanit', sans-serif; 
+            margin: 0; 
+            background-color: var(--light-bg); 
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--white);
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo { font-size: 1.5rem; font-weight: bold; color: var(--primary-color); text-decoration: none; }
+        nav ul { display: flex; list-style: none; gap: 30px; margin: 0; }
+        nav a { text-decoration: none; color: var(--dark-color); font-weight: 400; transition: 0.3s; }
+        nav a:hover { color: var(--primary-color); }
+
+        /* ระบบสลับหน้าจอด้วย CSS :target */
+        .page { display: none; padding: 60px 10%; min-height: 80vh; }
+        .page:target { display: block; }
+        
+        /* ตั้งหน้าแรกเป็นค่าเริ่มต้น */
+        #home-page { display: block; }
+        :target ~ #home-page { display: none; } 
+
+        /* Home Section */
+        #home-page { 
+            background: linear-gradient(135deg, #4D97FF 0%, #0056D2 100%); 
+            color: white; 
+        }
+        .hero-content { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+
+        .btn-main {
+            background: var(--secondary-color);
+            color: white !important;
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            display: inline-block;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+        }
+        .btn-main:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+        /* Lessons Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+        .card { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 15px; 
+            text-align: center; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            text-decoration: none; 
+            color: inherit; 
+            display: block; 
+            transition: 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); border: 1px solid var(--primary-color); }
+        .card h3 { color: var(--primary-color); margin-top: 0; }
+
+        /* Video & Content Area */
+        .video-box { 
+            width: 100%; 
+            max-width: 800px; 
+            aspect-ratio: 16/9; 
+            background: #000; 
+            margin: 20px auto; 
+            border-radius: 15px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: white; 
+            border: 4px solid var(--white);
+            overflow: hidden;
+        }
+        .back-btn { color: var(--primary-color); text-decoration: none; display: inline-block; margin-bottom: 20px; font-weight: bold; }
+        .content-container { max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; }
+
+        footer { text-align: center; padding: 30px; background: white; color: var(--dark-color); margin-top: 50px; }
+        
+        input { width: 100%; padding: 12px; margin-top: 8px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home-page" class="logo">Scratch Learning</a>
+        <ul>
+            <li><a href="#home-page">หน้าหลัก</a></li>
+            <li><a href="#lessons-page">บทเรียน</a></li>
+        </ul>
+    </nav>
+
+    <div id="home-page" class="page">
+        <div class="hero-content">
+            <div style="flex:1; min-width: 300px;">
+                <h1>สร้างเกมแมวกินโดนัท ด้วย Scratch</h1>
+                <p>บทเรียนออนไลน์วิชาวิทยาการคำนวณ ออกแบบโดยใช้หลักการ Gagne's 9 Events เพื่อการเรียนรู้ที่มีประสิทธิภาพ</p>
+                <a href="#lessons-page" class="btn-main">เข้าสู่บทเรียน</a>
+            </div>
+            <div style="flex:1; text-align:center; min-width: 300px;">
+                 <img src="https://via.placeholder.com/450x300/white/4D97FF?text=Scratch+Game+Visual" style="width:100%; border-radius:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+            </div>
+        </div>
+    </div>
+
+    <div id="lessons-page" class="page">
+        <h2 style="text-align:center">เนื้อหาการเรียนรู้ 5 บทเรียน</h2>
+        <div class="grid">
+            <a href="#unit1" class="card"><h3>Unit 1</h3><p>Stage & Sprites<br>เตรียมฉากและตัวละคร</p></a>
+            <a href="#unit2" class="card"><h3>Unit 2</h3><p>Events & Movement<br>ควบคุมแมวเดินซ้าย-ขวา</p></a>
+            <a href="#unit3" class="card"><h3>Unit 3</h3><p>Looks & Sound<br>เพิ่มเอฟเฟกต์และเสียง</p></a>
+            <a href="#unit4" class="card"><h3>Unit 4</h3><p>Variables<br>ระบบคะแนนสะสม</p></a>
+            <a href="#unit5" class="card"><h3>Unit 5</h3><p>Logic<br>เพิ่มความยากของเกม</p></a>
+            <a href="#submit-page" class="card" style="background:#FFF9F0; border:2px dashed var(--secondary-color)">
+                <h3 style="color:var(--secondary-color)">Submit</h3>
+                <p>ส่งโปรเจกต์ของคุณที่นี่</p>
+            </a>
+        </div>
+    </div>
+
+    <div id="unit1" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 1: การเตรียมฉากและตัวละคร</h2>
+            <div class="video-box">
+                <p>[ พื้นที่วิดีโอสอน Unit 1 ]</p>
+            </div>
+            <h3>สรุปเนื้อหา:</h3>
+            <ul>
+                <li>การเลือกฉากหลัง (Backdrops) จาก Library</li>
+                <li>การเพิ่มตัวละคร (Sprites) แมว และ โดนัท</li>
+                <li>การตั้งชื่อและปรับขนาดตัวละคร</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="unit2" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 2: การควบคุมการเคลื่อนที่</h2>
+            <div class="video-box"><p>[ พื้นที่วิดีโอสอน Unit 2 ]</p></div>
+            <p>เรียนรู้การใช้บล็อกคำสั่ง <strong>Events (When key pressed)</strong> และ <strong>Motion (Change x by)</strong> เพื่อให้แมวขยับได้</p>
+        </div>
+    </div>
+
+    <div id="unit3" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 3: แอนิเมชันและเสียง</h2>
+            <div class="video-box"><p>[ พื้นที่วิดีโอสอน Unit 3 ]</p></div>
+        </div>
+    </div>
+
+    <div id="unit4" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 4: ระบบคะแนน (Variables)</h2>
+            <div class="video-box"><p>[ พื้นที่วิดีโอสอน Unit 4 ]</p></div>
+        </div>
+    </div>
+
+    <div id="unit5" class="page">
+        <div class="content-container">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>Unit 5: ตรรกะและความยาก (Logic)</h2>
+            <div class="video-box"><p>[ พื้นที่วิดีโอสอน Unit 5 ]</p></div>
+        </div>
+    </div>
+
+    <div id="submit-page" class="page">
+        <div class="content-container" style="text-align: center;">
+            <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
+            <h2>ส่งผลงานโปรเจกต์ Scratch</h2>
+            
+            <form action="mailto:Mumumuon012@gmail.com" method="post" enctype="text/plain" style="text-align: left; margin-top: 20px;">
+                <label>ชื่อ-นามสกุล:</label>
+                <input type="text" name="Student_Name" placeholder="ระบุชื่อของคุณ" required>
+                
+                <label>ลิงก์โปรเจกต์ Scratch (Shared Link):</label>
+                <input type="text" name="Scratch_Project_URL" placeholder="https://scratch.mit.edu/projects/..." required>
+                
+                <p style="font-size: 0.85rem; color: #666;">*หมายเหตุ: เมื่อกดส่ง ระบบจะเปิดแอปอีเมลในเครื่องของคุณ โปรดกด 'ส่ง (Send)' อีกครั้งในแอปอีเมล</p>
+                
+                <button type="submit" class="btn-main" style="width: 100%; cursor: pointer;">ส่งงานไปยังอีเมล Mumumuon012@gmail.com</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>จัดทำโดย: นางสาวซีตีไอดา มะและ</p>
+        <p style="font-size: 0.8rem; opacity: 0.7;">วิชาวิทยาศาสตร์คำนวณ ระดับอุดมศึกษา</p>
+    </footer>
+
+</body>
+</html>
