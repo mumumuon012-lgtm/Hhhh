@@ -240,13 +240,18 @@
     </footer>
 
     <script>
+        // ฟังก์ชันนี้จะทำงานทุกครั้งที่ URL (Hash) เปลี่ยน เช่น จาก #unit1 เป็น #lessons-page
         window.addEventListener('hashchange', function() {
+            // ค้นหา iframe (วิดีโอ) ทั้งหมดในหน้าเว็บ
             var iframes = document.querySelectorAll('iframe');
+            
+            // สั่งให้วิดีโอทุกตัวทำการรีเซ็ตค่า src ใหม่
             iframes.forEach(function(iframe) {
                 var src = iframe.src;
-                iframe.src = src; 
+                iframe.src = src; // การโหลด src ซ้ำจะทำให้วิดีโอหยุดเล่นและปิดเสียงทันที
             });
         });
     </script>
+
 </body>
 </html>
