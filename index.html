@@ -62,6 +62,7 @@
             font-weight: bold;
             transition: 0.3s;
             border: none;
+            text-align: center;
         }
 
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
@@ -129,7 +130,7 @@
                 <a href="#lessons-page" class="btn-main">เข้าสู่บทเรียน</a>
             </div>
             <div style="flex:1; text-align:center; min-width: 300px;">
-                 <img src="Catt.png" style="width:100%; border-radius:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+                 <img src="Catt.png" alt="Scratch Cat" loading="lazy" style="width:100%; max-width:400px; border-radius:20px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
             </div>
         </div>
     </div>
@@ -137,14 +138,14 @@
     <div id="lessons-page" class="page">
         <h2 style="text-align:center">เนื้อหาการเรียนรู้ 4 บทเรียน</h2>
         <div class="grid">
-            <a href="#unit1" class="card"><h3>Unit 1</h3><p>Stage & Sprites<br></p></a>
-            <a href="#unit2" class="card"><h3>Unit 2</h3><p>motion & logic & Sensing<br></p></a>
-            <a href="#unit3" class="card"><h3>Unit 3</h3><p>Looks & Sound<br></p></a>
-            <a href="#unit4" class="card"><h3>Unit 4</h3><p>Variables<br></p></a>
-            <a href="#unit5" class="card"><h3>Unit 5</h3><p>example result<br></p></a>
+            <a href="#unit1" class="card"><h3>Unit 1</h3><p>Stage & Sprites</p></a>
+            <a href="#unit2" class="card"><h3>Unit 2</h3><p>Motion & Logic & Sensing</p></a>
+            <a href="#unit3" class="card"><h3>Unit 3</h3><p>Looks & Sound</p></a>
+            <a href="#unit4" class="card"><h3>Unit 4</h3><p>Variables</p></a>
+            <a href="#unit5" class="card"><h3>Unit 5</h3><p>Example Result</p></a>
             <a href="#submit-page" class="card" style="background:#FFF9F0; border:2px dashed var(--secondary-color)">
                 <h3 style="color:var(--secondary-color)">Submit your project here</h3>
-                <p></p>
+                <p>ส่งลิงก์ผลงานของคุณที่นี่</p>
             </a>
         </div>
     </div>
@@ -154,13 +155,13 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 1: การเตรียมฉากและตัวละคร ​🐱</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/SfZ7gj0USgo?si=YFKQjRTlaNgeype6" loading="lazy" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/SfZ7gj0USgo" loading="lazy" allowfullscreen></iframe>
             </div>
             <h3>สรุปเนื้อหา:</h3>
             <ul>
-                <li>การเลือกพื้นหลัง</li>
-                <li>การจัดการตัวละครแมว การเพิ่มของกิน</li>
-                <li>การปรับขนาด การเปลี่ยนชื่อ</li>
+                <li>การเลือกพื้นหลัง (Backdrop) รูปสวน (Garden)</li>
+                <li>การจัดการตัวละครแมวและการเพิ่มโดนัท</li>
+                <li>การปรับขนาดตัวละครให้เหมาะสม (Size: 70)</li>
             </ul>
         </div>
     </div>
@@ -170,12 +171,13 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 2: การเคลื่อนไหว ตรรกะ เซนเซอร์ 🏃‍♂️</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/UiWivD0kAkg?si=yU-AeIwPK3RlddrL" loading="lazy" title="YouTube video player" allowfullscreen></iframe>
-            </div> <h3>สรุปเนื้อหา:</h3>
+                <iframe src="https://www.youtube.com/embed/UiWivD0kAkg" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <h3>สรุปเนื้อหา:</h3>
             <ul>
-                <li>การกำหนดตำแหน่งเริ่มต้น</li>
-                <li>การควบคุมการเคลื่อนที่ </li>
-                <li>การตรวจสอบการสัมผัส</li>
+                <li>การกำหนดตำแหน่งเริ่มต้น (Setup position)</li>
+                <li>การควบคุมการเคลื่อนที่ด้วยปุ่มลูกศรซ้าย-ขวา</li>
+                <li>การตรวจสอบการสัมผัส (Sensing) ระหว่างแมวและโดนัท</li>
             </ul>
         </div>
     </div>
@@ -185,13 +187,13 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 3: รูปลักษณ์และเสียง 🔊</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/OIJQA2n02tg?si=AT6MUy1sjB49pC-T" loading="lazy" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/OIJQA2n02tg" loading="lazy" allowfullscreen></iframe>
             </div>
             <h3>สรุปเนื้อหา:</h3>
             <ul>
-                <li>การทำแอนิเมชันให้แมววิ่ง</li>
-                <li>การใส่เสียงเอฟเฟกต์ </li>
-                <li>การใส่เสียงเพลงพื้นหลัง  </li>
+                <li>การทำแอนิเมชันสลับท่าทาง (Next costume) ให้แมวดูเหมือนวิ่ง</li>
+                <li>การใส่เสียงเอฟเฟกต์ (Chomp) เมื่อเก็บโดนัทได้</li>
+                <li>การใส่เสียงเพลงพื้นหลังให้เล่นวนซ้ำ (Background Music)</li>
             </ul>
         </div>
     </div>
@@ -201,13 +203,14 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 4: ตัวแปร 🔢</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/-sjcZJQbGHQ?si=f_3hmJMNvqJ4Mhq1" loading="lazy" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/-sjcZJQbGHQ" loading="lazy" allowfullscreen></iframe>
             </div>
             <h3>สรุปเนื้อหา:</h3>
             <ul>
-                <li>การสร้างตัวแปรคะแนน</li>
-                <li>การตั้งค่าคะแนนเริ่มต้น</li>
-                <li>การเพิ่มคะแนน</li>
+                <li>การสร้างตัวแปรคะแนน (Score Variable)</li>
+                <li>การตั้งค่าคะแนนเริ่มต้นให้เป็น 0 ทุกครั้งที่เริ่มเกม</li>
+                <li>การเพิ่มคะแนนครั้งละ 1 แต้มเมื่อแมวสัมผัสโดนัท</li>
+            </ul>
         </div>
     </div>
 
@@ -216,8 +219,9 @@
             <a href="#lessons-page" class="back-btn">← กลับไปที่หน้ารวมบทเรียน</a>
             <h2>Unit 5: ตัวอย่างผลลัพธ์ ⚙️</h2>
             <div class="video-box">
-                <iframe src="https://www.youtube.com/embed/JHDZHq7BqII?si=Y-wH23N2qAt9q1w9" loading="lazy" title="YouTube video player" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/JHDZHq7BqII" loading="lazy" allowfullscreen></iframe>
             </div>
+            <p style="text-align:center; margin-top:15px;">ตัวอย่างเกมที่สมบูรณ์: แมวสามารถวิ่งรับโดนัท มีเสียง และมีการนับคะแนน</p>
         </div>
     </div>
 
@@ -240,18 +244,15 @@
     </footer>
 
     <script>
-        // ฟังก์ชันนี้จะทำงานทุกครั้งที่ URL (Hash) เปลี่ยน เช่น จาก #unit1 เป็น #lessons-page
         window.addEventListener('hashchange', function() {
-            // ค้นหา iframe (วิดีโอ) ทั้งหมดในหน้าเว็บ
+            // เมื่อมีการเปลี่ยนหน้า (Hash เปลี่ยน) ให้หยุดวิดีโอทั้งหมดทันที
             var iframes = document.querySelectorAll('iframe');
-            
-            // สั่งให้วิดีโอทุกตัวทำการรีเซ็ตค่า src ใหม่
             iframes.forEach(function(iframe) {
-                var src = iframe.src;
-                iframe.src = src; // การโหลด src ซ้ำจะทำให้วิดีโอหยุดเล่นและปิดเสียงทันที
+                var currentSrc = iframe.src;
+                iframe.src = "";           // ล้างค่าเพื่อหยุดเสียงและภาพเด็ดขาด
+                iframe.src = currentSrc;    // คืนค่าเพื่อให้พร้อมเล่นใหม่เมื่อผู้ใช้กลับมาหน้าเดิม
             });
         });
     </script>
-
 </body>
 </html>
