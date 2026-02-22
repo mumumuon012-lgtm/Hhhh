@@ -251,6 +251,19 @@
         <p>จัดทำโดย: นางสาวซีตีไอดา มะและ</p>
         <p style="font-size: 0.8rem; opacity: 0.7;">บทเรียนสื่อการสอนนวัตกรรม (วิชาวิทยาการคำนวณ)</p>
     </footer>
+<script>
+    // ตรวจจับการเปลี่ยนหน้า (hash change)
+    window.addEventListener('hashchange', function() {
+        // ค้นหา iframe ทั้งหมดในหน้าเว็บ
+        var iframes = document.querySelectorAll('iframe');
+        
+        // วนลูปเพื่อสั่งให้วิดีโอหยุดเล่นโดยการโหลด src ใหม่
+        iframes.forEach(function(iframe) {
+            var src = iframe.src;
+            iframe.src = src; 
+        });
+    });
+</script>
 
 </body>
 </html>
